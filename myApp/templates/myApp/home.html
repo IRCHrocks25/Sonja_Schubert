@@ -1,0 +1,875 @@
+{% extends 'myApp/base.html' %}
+
+{% block content %}
+<!-- Sticky Header -->
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-stone-gray/30 shadow-sm">
+    <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div class="text-2xl font-serif font-semibold text-deep-teal tracking-wide">
+            SONJA CHRISTINA
+        </div>
+        <div class="hidden md:flex items-center space-x-8">
+            <a href="#about" class="text-gray-700 hover:text-deep-teal transition">About</a>
+            <a href="#services" class="text-gray-700 hover:text-deep-teal transition">Services</a>
+            <a href="#testimonials" class="text-gray-700 hover:text-deep-teal transition">Testimonials</a>
+            <a href="#contact" class="text-gray-700 hover:text-deep-teal transition">Contact</a>
+        </div>
+        <a href="#discovery" class="bg-deep-teal text-white px-6 py-2 rounded-full hover:bg-forest-green transition btn-hover">
+            Schedule Discovery Call
+        </a>
+    </nav>
+</header>
+
+<!-- 1. Hero Section -->
+<section class="min-h-screen flex items-center bg-gradient-to-br from-warm-offwhite via-pale-blush to-stone-gray relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+        <!-- Left: Main Copy -->
+        <div class="fade-in">
+            <div class="text-xs uppercase tracking-widest text-deep-teal mb-4 font-medium">
+                EMOTIONAL COMPANION FOR WOMEN WITH CANCER
+            </div>
+            <h1 class="text-5xl md:text-7xl font-serif font-bold text-gray-900 mb-6 leading-tight">
+                Your path.<br>Your choice.
+            </h1>
+            <p class="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed max-w-lg">
+                A calm, sacred space for women navigating a cancer diagnosis, to release the weight, find clarity, and come home to themselves.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                <a href="#discovery" class="bg-deep-teal text-white px-8 py-4 rounded-full text-center font-medium hover:bg-forest-green transition btn-hover">
+                    Schedule Your Discovery Call
+                </a>
+                <a href="#services" class="border-2 border-deep-teal text-deep-teal px-8 py-4 rounded-full text-center font-medium hover:bg-deep-teal hover:text-white transition btn-hover">
+                    Learn How I Can Help
+                </a>
+            </div>
+        </div>
+        
+        <!-- Right: Portrait & Quote Card -->
+        <div class="relative fade-in">
+            <!-- Main Portrait Placeholder -->
+            <div class="relative rounded-3xl overflow-hidden shadow-2xl">
+                <div class="w-full h-[600px] bg-gradient-to-br from-soft-rose to-mauve flex items-center justify-center">
+                    <div class="text-center text-white">
+                        <i class="fas fa-user-circle text-9xl opacity-50"></i>
+                        <p class="mt-4 text-lg">Portrait Image</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Overlapping Quote Card -->
+            <div class="absolute -bottom-8 -left-8 bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-xl border border-light-gold/30 max-w-sm">
+                <i class="fas fa-quote-left text-soft-rose text-2xl mb-3"></i>
+                <p class="text-gray-700 italic leading-relaxed mb-3">
+                    "Come home to yourself, I'll walk with you. Because even after a diagnosis, you are not lost. There is always a way and you don't have to walk it alone."
+                </p>
+                <p class="text-sm text-deep-teal font-medium">– Sonja Christina</p>
+            </div>
+            
+            <!-- Decorative Overlay Circle -->
+            <div class="absolute -top-8 -right-8 w-32 h-32 bg-soft-rose/20 rounded-full blur-2xl"></div>
+        </div>
+    </div>
+</section>
+
+<!-- 2. Credibility / Testimonials -->
+<section id="testimonials" class="py-24 bg-pale-blush relative overflow-hidden">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-5">
+        <div class="w-full h-full bg-gradient-to-br from-soft-rose to-mauve blur-3xl"></div>
+    </div>
+    
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="text-center mb-16 fade-in">
+            <h2 class="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-4">
+                You don't have to take my word for it.
+            </h2>
+            <p class="text-xl text-gray-700">
+                Hear from women who've walked this path:
+            </p>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Testimonial 1 -->
+            <div class="bg-white rounded-3xl p-8 shadow-lg border border-stone-gray/20 fade-in">
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 rounded-full bg-soft-rose/30 flex items-center justify-center text-deep-teal font-bold text-lg mr-3">
+                        M
+                    </div>
+                    <i class="fas fa-quote-left text-soft-rose/50 text-xl"></i>
+                </div>
+                <p class="text-gray-700 mb-4 leading-relaxed italic">
+                    "Sonja created a space where I could finally breathe. She didn't try to fix me or make me positive. She just held space for all of me."
+                </p>
+                <p class="text-sm text-gray-600">— M., 48</p>
+            </div>
+            
+            <!-- Testimonial 2 -->
+            <div class="bg-white rounded-3xl p-8 shadow-lg border border-stone-gray/20 fade-in">
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 rounded-full bg-mauve/30 flex items-center justify-center text-deep-teal font-bold text-lg mr-3">
+                        A
+                    </div>
+                    <i class="fas fa-quote-left text-soft-rose/50 text-xl"></i>
+                </div>
+                <p class="text-gray-700 mb-4 leading-relaxed italic">
+                    "I felt seen in a way I hadn't experienced before. This work helped me reconnect with myself when everything felt chaotic."
+                </p>
+                <p class="text-sm text-gray-600">— A., 52</p>
+            </div>
+            
+            <!-- Testimonial 3 -->
+            <div class="bg-white rounded-3xl p-8 shadow-lg border border-stone-gray/20 fade-in">
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 rounded-full bg-light-gold/30 flex items-center justify-center text-deep-teal font-bold text-lg mr-3">
+                        C
+                    </div>
+                    <i class="fas fa-quote-left text-soft-rose/50 text-xl"></i>
+                </div>
+                <p class="text-gray-700 mb-4 leading-relaxed italic">
+                    "The emotional support I received was transformative. Sonja's presence is a gift during the most difficult time of my life."
+                </p>
+                <p class="text-sm text-gray-600">— C., 45</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 3. Stat Section -->
+<section class="py-24 bg-gradient-to-br from-deep-teal to-forest-green text-white relative overflow-hidden">
+    <!-- Background Image Overlay -->
+    <div class="absolute inset-0 opacity-10">
+        <div class="w-full h-full bg-gradient-to-br from-soft-rose to-mauve blur-3xl"></div>
+    </div>
+    
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <h2 class="text-4xl md:text-5xl font-serif font-bold text-center mb-16 fade-in">
+            The reality behind the diagnosis
+        </h2>
+        
+        <!-- Stats Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+            <div class="text-center fade-in">
+                <div class="text-5xl md:text-6xl font-bold mb-3">Every 2 min</div>
+                <p class="text-lg text-white/90">a woman in Germany receives a cancer diagnosis</p>
+            </div>
+            <div class="text-center fade-in">
+                <div class="text-5xl md:text-6xl font-bold mb-3">80%+</div>
+                <p class="text-lg text-white/90">of my clients are women navigating emotional shock and uncertainty</p>
+            </div>
+            <div class="text-center fade-in">
+                <div class="text-5xl md:text-6xl font-bold mb-3">25+</div>
+                <p class="text-lg text-white/90">years of nursing and palliative care experience</p>
+            </div>
+            <div class="text-center fade-in">
+                <div class="text-5xl md:text-6xl font-bold mb-3">100%</div>
+                <p class="text-lg text-white/90">of the women I work with describe feeling deeply seen, held, and emotionally safe</p>
+            </div>
+        </div>
+        
+        <!-- Narrative Text -->
+        <div class="max-w-4xl mx-auto fade-in">
+            <div class="bg-white/10 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-white/20">
+                <p class="text-xl md:text-2xl leading-relaxed mb-6">
+                    But here's what the statistics don't tell you...
+                </p>
+                <p class="text-lg md:text-xl leading-relaxed mb-8 text-white/95">
+                    They don't capture the weight of sitting in a doctor's office, hearing words that change everything. They don't measure the isolation that comes when well-meaning friends don't know what to say. They don't account for the exhaustion of trying to be strong for everyone else while your own world feels like it's crumbling.
+                </p>
+                <div class="flex items-center justify-center mt-8">
+                    <i class="far fa-heart text-3xl text-soft-rose/50 mr-4"></i>
+                    <div>
+                        <p class="text-2xl font-serif font-semibold mb-2">That's where I come in.</p>
+                        <p class="text-lg text-white/90">A calm, compassionate presence when the world feels overwhelming.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 4. Pain Points & Solutions -->
+<section class="py-24 bg-warm-offwhite">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16 fade-in">
+            <h2 class="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-4">
+                I know what you're carrying.
+            </h2>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-12 items-start">
+            <!-- Left: Pain Points -->
+            <div class="fade-in">
+                <h3 class="text-2xl font-serif font-semibold text-gray-900 mb-8">You're feeling...</h3>
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <i class="fas fa-cloud-showers-heavy text-soft-rose text-2xl mr-4 mt-1"></i>
+                        <div>
+                            <p class="text-lg font-medium text-gray-900">Overwhelmed</p>
+                            <p class="text-gray-600">By the weight of decisions, appointments, and uncertainty</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="far fa-circle text-soft-rose text-2xl mr-4 mt-1"></i>
+                        <div>
+                            <p class="text-lg font-medium text-gray-900">Disconnected</p>
+                            <p class="text-gray-600">From your body, your intuition, your sense of self</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="far fa-face-frown-open text-soft-rose text-2xl mr-4 mt-1"></i>
+                        <div>
+                            <p class="text-lg font-medium text-gray-900">Afraid</p>
+                            <p class="text-gray-600">Of what comes next, of losing control, of the unknown</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-user-slash text-soft-rose text-2xl mr-4 mt-1"></i>
+                        <div>
+                            <p class="text-lg font-medium text-gray-900">Alone</p>
+                            <p class="text-gray-600">Even when surrounded by people who care</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-volume-xmark text-soft-rose text-2xl mr-4 mt-1"></i>
+                        <div>
+                            <p class="text-lg font-medium text-gray-900">Unheard</p>
+                            <p class="text-gray-600">Your real feelings don't have a safe place to land</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="far fa-moon text-soft-rose text-2xl mr-4 mt-1"></i>
+                        <div>
+                            <p class="text-lg font-medium text-gray-900">Exhausted</p>
+                            <p class="text-gray-600">From trying to be strong, positive, and productive</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right: Transformations -->
+            <div class="fade-in">
+                <h3 class="text-2xl font-serif font-semibold text-gray-900 mb-8">What becomes possible:</h3>
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <i class="fas fa-check-circle text-forest-green text-2xl mr-4 mt-1"></i>
+                        <div>
+                            <p class="text-lg font-medium text-gray-900">Clarity</p>
+                            <p class="text-gray-600">To make decisions from a place of inner wisdom, not fear</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-check-circle text-forest-green text-2xl mr-4 mt-1"></i>
+                        <div>
+                            <p class="text-lg font-medium text-gray-900">Connection</p>
+                            <p class="text-gray-600">To yourself, your body, and what truly matters</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-check-circle text-forest-green text-2xl mr-4 mt-1"></i>
+                        <div>
+                            <p class="text-lg font-medium text-gray-900">Courage</p>
+                            <p class="text-gray-600">To feel all of it—the fear, the grief, the hope</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-check-circle text-forest-green text-2xl mr-4 mt-1"></i>
+                        <div>
+                            <p class="text-lg font-medium text-gray-900">Community</p>
+                            <p class="text-gray-600">A sacred space where you can be exactly as you are</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-check-circle text-forest-green text-2xl mr-4 mt-1"></i>
+                        <div>
+                            <p class="text-lg font-medium text-gray-900">Voice</p>
+                            <p class="text-gray-600">To express what's real without needing to protect others</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-check-circle text-forest-green text-2xl mr-4 mt-1"></i>
+                        <div>
+                            <p class="text-lg font-medium text-gray-900">Rest</p>
+                            <p class="text-gray-600">Permission to stop performing and simply be</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Closing Statement -->
+        <div class="max-w-3xl mx-auto mt-16 text-center fade-in">
+            <p class="text-xl md:text-2xl text-gray-700 italic leading-relaxed">
+                This transformation doesn't require you to be positive, productive, or perfect.<br>
+                It simply requires you to show up, exactly as you are.
+            </p>
+        </div>
+        
+        <!-- Side Image Placeholder -->
+        <div class="mt-16 fade-in">
+            <div class="w-full max-w-md mx-auto rounded-3xl overflow-hidden shadow-xl">
+                <div class="w-full h-96 bg-gradient-to-br from-soft-rose to-mauve flex items-center justify-center">
+                    <div class="text-center text-white">
+                        <i class="fas fa-hand-holding-heart text-6xl opacity-50 mb-4"></i>
+                        <p>Contemplative Image</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 5. How Sonja Can Help - 3 Phases -->
+<section class="py-24 bg-gradient-to-br from-warm-beige to-pale-blush relative overflow-hidden">
+    <!-- Background Decorative Circle -->
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-soft-rose/10 rounded-full blur-3xl"></div>
+    
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="text-center mb-16 fade-in">
+            <h2 class="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-4">
+                A gentle path through deep terrain
+            </h2>
+            <p class="text-xl text-gray-700 max-w-3xl mx-auto">
+                My work is not about fixing you. It's about creating space for you to feel, release, and return to your own inner wisdom.
+            </p>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Phase 1 -->
+            <div class="bg-white rounded-3xl p-8 shadow-lg border border-stone-gray/20 fade-in">
+                <div class="text-xs uppercase tracking-widest text-deep-teal mb-3 font-medium">Phase 1</div>
+                <div class="flex items-center mb-4">
+                    <i class="far fa-hand-holding-heart text-soft-rose text-3xl mr-3"></i>
+                    <h3 class="text-2xl font-serif font-semibold text-gray-900">PAUSE & PRESENCE</h3>
+                </div>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    Creating safety and space
+                </p>
+                <p class="text-gray-600 mb-4 leading-relaxed">
+                    We begin by creating a container of safety where you can let down your guard. No performance, no expectations—just presence.
+                </p>
+                <div class="mt-6">
+                    <p class="font-semibold text-gray-900 mb-2">What happens:</p>
+                    <p class="text-gray-600">You learn to breathe again. You discover that your feelings are valid, your experience is real, and you don't have to carry it alone.</p>
+                </div>
+            </div>
+            
+            <!-- Phase 2 -->
+            <div class="bg-white rounded-3xl p-8 shadow-lg border border-stone-gray/20 fade-in">
+                <div class="text-xs uppercase tracking-widest text-deep-teal mb-3 font-medium">Phase 2</div>
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-seedling text-forest-green text-3xl mr-3"></i>
+                    <h3 class="text-2xl font-serif font-semibold text-gray-900">INNER JOURNEY</h3>
+                </div>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    Exploring the depths
+                </p>
+                <p class="text-gray-600 mb-4 leading-relaxed">
+                    Together, we gently explore what's beneath the surface—the fears, the grief, the questions that have no easy answers.
+                </p>
+                <div class="mt-6">
+                    <p class="font-semibold text-gray-900 mb-2">What happens:</p>
+                    <p class="text-gray-600">You reconnect with your inner wisdom. You remember who you are beyond the diagnosis, beyond the roles you play.</p>
+                </div>
+            </div>
+            
+            <!-- Phase 3 -->
+            <div class="bg-white rounded-3xl p-8 shadow-lg border border-stone-gray/20 fade-in">
+                <div class="text-xs uppercase tracking-widest text-deep-teal mb-3 font-medium">Phase 3</div>
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-mountain-sun text-light-gold text-3xl mr-3"></i>
+                    <h3 class="text-2xl font-serif font-semibold text-gray-900">INTEGRATION & EMBODIMENT</h3>
+                </div>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    Living from your essence
+                </p>
+                <p class="text-gray-600 mb-4 leading-relaxed">
+                    You integrate what you've discovered into your daily life. You learn to honor your needs, speak your truth, and move through the world with more ease.
+                </p>
+                <div class="mt-6">
+                    <p class="font-semibold text-gray-900 mb-2">What happens:</p>
+                    <p class="text-gray-600">You embody your strength, your softness, your wholeness. You live from a place of authenticity, not performance.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-16 fade-in">
+            <p class="text-2xl font-serif italic text-gray-700">
+                This is not a quick fix. It's a return to your essence.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 6. Services Offered -->
+<section id="services" class="py-24 bg-warm-offwhite">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16 fade-in">
+            <h2 class="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-4">
+                How we can work together
+            </h2>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-8 mb-16">
+            <!-- Service 1 -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-stone-gray/20 fade-in">
+                <div class="h-48 bg-gradient-to-br from-soft-rose to-mauve flex items-center justify-center">
+                    <i class="fas fa-hands-holding-heart text-white text-5xl opacity-50"></i>
+                </div>
+                <div class="p-8">
+                    <div class="text-xs uppercase tracking-widest text-deep-teal mb-3 font-medium">For women</div>
+                    <h3 class="text-2xl font-serif font-semibold text-gray-900 mb-4">Emotional Companion Sessions</h3>
+                    <ul class="space-y-2 mb-6 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-forest-green mr-2 mt-1"></i>
+                            <span>One-on-one sessions tailored to your needs</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-forest-green mr-2 mt-1"></i>
+                            <span>Safe space to process emotions and experiences</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-forest-green mr-2 mt-1"></i>
+                            <span>Tools and practices for daily support</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-forest-green mr-2 mt-1"></i>
+                            <span>Ongoing support throughout your journey</span>
+                        </li>
+                    </ul>
+                    <p class="text-sm italic text-gray-500 mb-6">Best for: Women seeking emotional support and inner clarity during their cancer journey.</p>
+                    <a href="#discovery" class="block w-full text-center bg-deep-teal text-white px-6 py-3 rounded-full hover:bg-forest-green transition btn-hover">
+                        Learn More & Book
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Service 2 -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-stone-gray/20 fade-in">
+                <div class="h-48 bg-gradient-to-br from-forest-green to-deep-teal flex items-center justify-center">
+                    <i class="fas fa-users text-white text-5xl opacity-50"></i>
+                </div>
+                <div class="p-8">
+                    <div class="text-xs uppercase tracking-widest text-deep-teal mb-3 font-medium">For families</div>
+                    <h3 class="text-2xl font-serif font-semibold text-gray-900 mb-4">Family & Caregivers Support</h3>
+                    <ul class="space-y-2 mb-6 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-forest-green mr-2 mt-1"></i>
+                            <span>Support for partners, children, and loved ones</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-forest-green mr-2 mt-1"></i>
+                            <span>Guidance on how to show up with presence</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-forest-green mr-2 mt-1"></i>
+                            <span>Tools for navigating difficult conversations</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-forest-green mr-2 mt-1"></i>
+                            <span>Processing your own emotions and fears</span>
+                        </li>
+                    </ul>
+                    <p class="text-sm italic text-gray-500 mb-6">Best for: Family members and caregivers who want to support their loved one while caring for themselves.</p>
+                    <a href="#discovery" class="block w-full text-center bg-deep-teal text-white px-6 py-3 rounded-full hover:bg-forest-green transition btn-hover">
+                        Explore This Support
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Service 3 -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-stone-gray/20 fade-in">
+                <div class="h-48 bg-gradient-to-br from-light-gold to-warm-beige flex items-center justify-center">
+                    <i class="fas fa-dove text-white text-5xl opacity-50"></i>
+                </div>
+                <div class="p-8">
+                    <div class="text-xs uppercase tracking-widest text-deep-teal mb-3 font-medium">For end-of-life support</div>
+                    <h3 class="text-2xl font-serif font-semibold text-gray-900 mb-4">End-of-Life Presence</h3>
+                    <ul class="space-y-2 mb-6 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-forest-green mr-2 mt-1"></i>
+                            <span>Sacred space for processing and preparation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-forest-green mr-2 mt-1"></i>
+                            <span>Support for unfinished business and legacy</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-forest-green mr-2 mt-1"></i>
+                            <span>Companionship through the final journey</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-forest-green mr-2 mt-1"></i>
+                            <span>Family support during transition</span>
+                        </li>
+                    </ul>
+                    <p class="text-sm italic text-gray-500 mb-6">Best for: Individuals and families navigating end-of-life transitions with grace and presence.</p>
+                    <a href="#discovery" class="block w-full text-center bg-deep-teal text-white px-6 py-3 rounded-full hover:bg-forest-green transition btn-hover">
+                        Inquire About Availability
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Discovery Call CTA -->
+        <div class="max-w-2xl mx-auto text-center bg-white rounded-3xl p-8 shadow-lg border border-stone-gray/20 fade-in">
+            <p class="text-xl font-serif font-semibold text-gray-900 mb-4">
+                Not sure which is right for you?
+            </p>
+            <a href="#discovery" class="inline-block bg-deep-teal text-white px-8 py-4 rounded-full hover:bg-forest-green transition btn-hover">
+                Schedule a Free Discovery Call
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- 7. Why Work With Sonja -->
+<section class="py-24 bg-gradient-to-br from-stone-gray/30 to-warm-offwhite">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12">
+            <!-- Left: Narrative Blocks -->
+            <div class="space-y-8 fade-in">
+                <div>
+                    <h3 class="text-2xl font-serif font-semibold text-gray-900 mb-3">I've been where you are.</h3>
+                    <p class="text-gray-700 leading-relaxed">As a daughter, a friend, and a nurse, I've sat in hospital rooms, held hands, and witnessed the weight of a diagnosis. I know what it feels like.</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-serif font-semibold text-gray-900 mb-3">This is not clinical. It's deeply human.</h3>
+                    <p class="text-gray-700 leading-relaxed">While I bring 25+ years of nursing experience, this work is about the heart, not the chart. It's about presence, not protocols.</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-serif font-semibold text-gray-900 mb-3">I hold space for what the medical system cannot.</h3>
+                    <p class="text-gray-700 leading-relaxed">Doctors treat the disease. I'm here for the person—the emotions, the questions, the humanity that gets lost in the medical process.</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-serif font-semibold text-gray-900 mb-3">I don't give advice. I help you hear yourself.</h3>
+                    <p class="text-gray-700 leading-relaxed">You already know what you need. My role is to create the space where you can access your own wisdom.</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-serif font-semibold text-gray-900 mb-3">I'm trained, accredited, and deeply experienced.</h3>
+                    <p class="text-gray-700 leading-relaxed">Certified Journey Practitioner, trauma-informed facilitator, and 25+ years in nursing and palliative care.</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-serif font-semibold text-gray-900 mb-3">Most importantly: I see you.</h3>
+                    <p class="text-gray-700 leading-relaxed">Not the diagnosis, not the patient, not the story others tell about you. I see you—the whole, complex, beautiful human you are.</p>
+                </div>
+            </div>
+            
+            <!-- Right: Credentials Card -->
+            <div class="fade-in">
+                <div class="bg-white rounded-3xl p-8 shadow-lg border border-stone-gray/20 sticky top-24">
+                    <h3 class="text-2xl font-serif font-semibold text-gray-900 mb-6">What sets my work apart</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-certificate text-deep-teal text-xl mr-4 mt-1"></i>
+                            <div>
+                                <p class="font-semibold text-gray-900">Certified Journey Practitioner</p>
+                                <p class="text-sm text-gray-600">Trauma-informed, emotionally attuned facilitation</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-stethoscope text-deep-teal text-xl mr-4 mt-1"></i>
+                            <div>
+                                <p class="font-semibold text-gray-900">25+ Years in Nursing</p>
+                                <p class="text-sm text-gray-600">Palliative care, oncology, and end-of-life experience</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="far fa-heart text-deep-teal text-xl mr-4 mt-1"></i>
+                            <div>
+                                <p class="font-semibold text-gray-900">Lived Experience</p>
+                                <p class="text-sm text-gray-600">As daughter, friend, nurse—I've been in the room</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-hands-holding-heart text-deep-teal text-xl mr-4 mt-1"></i>
+                            <div>
+                                <p class="font-semibold text-gray-900">Emotional Focus</p>
+                                <p class="text-sm text-gray-600">Space for what the medical system cannot hold</p>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <!-- Portrait Placeholder -->
+                    <div class="mt-8 rounded-2xl overflow-hidden">
+                        <div class="w-full h-64 bg-gradient-to-br from-soft-rose to-mauve flex items-center justify-center">
+                            <i class="fas fa-user-circle text-white text-6xl opacity-50"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 8. About Sonja -->
+<section id="about" class="py-24 bg-warm-offwhite">
+    <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-4xl md:text-5xl font-serif font-bold text-center mb-16 fade-in">
+            The moment that changed everything
+        </h2>
+        
+        <div class="grid md:grid-cols-2 gap-12 items-start">
+            <!-- Left: Portrait -->
+            <div class="fade-in">
+                <div class="rounded-3xl overflow-hidden shadow-2xl mb-6">
+                    <div class="w-full h-[500px] bg-gradient-to-br from-soft-rose to-mauve flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <i class="fas fa-user-circle text-9xl opacity-50"></i>
+                            <p class="mt-4 text-lg">Portrait Image</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-lg border border-stone-gray/20">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <i class="fas fa-candle text-soft-rose text-2xl"></i>
+                        <div>
+                            <p class="font-semibold text-gray-900">Sonja Christina</p>
+                            <p class="text-sm text-gray-600">Emotional Companion & Journey Practitioner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right: Story -->
+            <div class="fade-in space-y-6 text-gray-700 leading-relaxed">
+                <p class="text-lg">
+                    It was in a hospital room, watching someone I loved navigate the final days of their cancer journey, that I realized something profound: the medical system could treat the disease, but it couldn't hold the person.
+                </p>
+                <p>
+                    I saw the gap—the space between diagnosis and peace, between treatment and transformation, between being a patient and being fully human.
+                </p>
+                <p>
+                    As a nurse with over 25 years of experience, I'd been trained to manage symptoms, monitor vitals, and follow protocols. But what I witnessed in that room was something deeper: the need for emotional presence, for someone to hold space for the fear, the grief, the questions that have no medical answers.
+                </p>
+                
+                <!-- Pull Quote -->
+                <div class="border-l-4 border-soft-rose pl-6 my-8">
+                    <p class="text-2xl font-serif italic text-gray-900">
+                        Not more treatment. Deeper connection.
+                    </p>
+                </div>
+                
+                <p>
+                    That moment changed everything. It led me to become a Certified Journey Practitioner, to study trauma-informed care, and to create a practice dedicated entirely to the emotional and spiritual dimensions of a cancer diagnosis.
+                </p>
+                <p>
+                    Today, I offer the space I once needed myself. A place where women can come exactly as they are—scared, angry, hopeful, exhausted, all of it. A place where they don't have to be strong, positive, or productive. A place where they can simply be.
+                </p>
+                <p class="font-semibold text-gray-900">
+                    This is not about fixing. It's about presence. It's about coming home to yourself, even in the midst of the storm.
+                </p>
+                <a href="#about-full" class="inline-block mt-6 text-deep-teal hover:text-forest-green font-medium">
+                    Read My Full Story →
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 9. Mission & Vision -->
+<section class="py-24 bg-gradient-to-br from-pale-blush to-warm-beige">
+    <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-4xl md:text-5xl font-serif font-bold text-center mb-16 fade-in">
+            What I believe and what I'm building
+        </h2>
+        
+        <div class="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-stone-gray/20 fade-in">
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Left: Mission & Vision -->
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-serif font-semibold text-gray-900 mb-4">Mission</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            To create a sacred, calm space where women navigating a cancer diagnosis can release the weight, find clarity, and come home to themselves. To offer emotional companionship that honors the whole person—not just the patient, but the human being with fears, dreams, and an unshakeable capacity for resilience.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-serif font-semibold text-gray-900 mb-4">Vision</h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <span class="text-soft-rose mr-2">•</span>
+                                <span>A world where every woman facing cancer has access to emotional support that honors her humanity</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-soft-rose mr-2">•</span>
+                                <span>Where the medical and emotional dimensions of healing are equally valued</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-soft-rose mr-2">•</span>
+                                <span>Where women feel seen, held, and empowered to navigate their journey with grace and authenticity</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Right: Impact -->
+                <div>
+                    <h3 class="text-2xl font-serif font-semibold text-gray-900 mb-6">The Impact I'm Creating</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-circle-check text-forest-green text-xl mr-4 mt-1"></i>
+                            <span class="text-gray-700">Women feeling deeply seen and emotionally safe</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-circle-check text-forest-green text-xl mr-4 mt-1"></i>
+                            <span class="text-gray-700">Families navigating difficult conversations with more presence and compassion</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-circle-check text-forest-green text-xl mr-4 mt-1"></i>
+                            <span class="text-gray-700">Women reconnecting with their inner wisdom and making decisions from clarity, not fear</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-circle-check text-forest-green text-xl mr-4 mt-1"></i>
+                            <span class="text-gray-700">A shift from performance to presence—from "being strong" to being authentic</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-circle-check text-forest-green text-xl mr-4 mt-1"></i>
+                            <span class="text-gray-700">End-of-life transitions held with grace, dignity, and emotional support</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-circle-check text-forest-green text-xl mr-4 mt-1"></i>
+                            <span class="text-gray-700">A growing recognition that emotional support is not optional—it's essential</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 10. Free Lead Magnet -->
+<section class="py-24 bg-warm-offwhite">
+    <div class="max-w-4xl mx-auto px-6">
+        <div class="bg-white rounded-3xl shadow-2xl border border-light-gold/30 overflow-hidden fade-in">
+            <div class="grid md:grid-cols-2 gap-0">
+                <!-- Left: Content -->
+                <div class="p-8 md:p-12">
+                    <div class="text-xs uppercase tracking-widest text-deep-teal mb-4 font-medium">Free Guide</div>
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-6">
+                        5 Gentle Practices to Return to Yourself After a Cancer Diagnosis
+                    </h2>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-forest-green mr-3 mt-1"></i>
+                            <span class="text-gray-700">Simple, daily practices you can start today</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-forest-green mr-3 mt-1"></i>
+                            <span class="text-gray-700">No toxic positivity—just gentle, honest support</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-forest-green mr-3 mt-1"></i>
+                            <span class="text-gray-700">Tools to help you reconnect with your inner wisdom</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-forest-green mr-3 mt-1"></i>
+                            <span class="text-gray-700">A pathway back to yourself, even in the midst of uncertainty</span>
+                        </li>
+                    </ul>
+                    <p class="text-gray-600 mb-8 italic">
+                        No fluff. No toxic positivity. Just gentle, effective practices you can use today.
+                    </p>
+                    <a href="#download" class="block w-full text-center bg-deep-teal text-white px-8 py-4 rounded-full hover:bg-forest-green transition btn-hover font-medium">
+                        Download Your Free Guide
+                    </a>
+                </div>
+                
+                <!-- Right: Guide Mockup -->
+                <div class="bg-gradient-to-br from-soft-rose to-mauve flex items-center justify-center p-8">
+                    <div class="text-center text-white">
+                        <i class="far fa-file-lines text-8xl opacity-50 mb-4"></i>
+                        <p class="text-lg">Guide Cover</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 11. Final CTA -->
+<section id="discovery" class="py-24 bg-gradient-to-br from-deep-teal to-forest-green text-white relative overflow-hidden">
+    <div class="max-w-3xl mx-auto px-6 text-center relative z-10 fade-in">
+        <i class="fas fa-hands-holding-heart text-5xl text-soft-rose/50 mb-6"></i>
+        <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6">
+            You don't have to do this alone.
+        </h2>
+        <p class="text-xl md:text-2xl leading-relaxed mb-8 text-white/95">
+            If you're reading this, you're already taking a step toward something different. You're acknowledging that you need support, that you deserve a space to be exactly as you are.
+        </p>
+        <p class="text-lg md:text-xl leading-relaxed mb-10 text-white/90">
+            A discovery call is simply a conversation. No pressure. No sales pitch. Just honest, compassionate dialogue about what you're carrying and how I might be able to help.
+        </p>
+        <a href="#contact" class="inline-block bg-white text-deep-teal px-10 py-5 rounded-full text-lg font-semibold hover:bg-warm-offwhite transition btn-hover mb-4">
+            Schedule Your Free Discovery Call
+        </a>
+        <p class="text-sm text-white/80">
+            No pressure. No sales pitch. Just honest, compassionate conversation.
+        </p>
+    </div>
+</section>
+
+<!-- 12. Footer -->
+<footer id="contact" class="bg-stone-gray text-gray-700 py-16">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-3 gap-12 mb-12">
+            <!-- Column 1: Brand -->
+            <div>
+                <h3 class="text-2xl font-serif font-semibold text-deep-teal mb-4 tracking-wide">
+                    SONJA CHRISTINA
+                </h3>
+                <p class="text-gray-600 mb-2 font-medium">Calm. Clarity. Connection.</p>
+                <p class="text-sm text-gray-600">
+                    A sacred space for women navigating life after a cancer diagnosis.
+                </p>
+            </div>
+            
+            <!-- Column 2: Quick Links -->
+            <div>
+                <h4 class="font-semibold text-gray-900 mb-4">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="#about" class="text-gray-600 hover:text-deep-teal transition">About</a></li>
+                    <li><a href="#services" class="text-gray-600 hover:text-deep-teal transition">Services</a></li>
+                    <li><a href="#testimonials" class="text-gray-600 hover:text-deep-teal transition">Testimonials</a></li>
+                    <li><a href="#contact" class="text-gray-600 hover:text-deep-teal transition">Contact</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-deep-teal transition">Privacy Policy</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-deep-teal transition">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            
+            <!-- Column 3: Contact -->
+            <div>
+                <h4 class="font-semibold text-gray-900 mb-4">Contact</h4>
+                <ul class="space-y-3">
+                    <li class="flex items-start">
+                        <i class="far fa-envelope text-deep-teal mr-3 mt-1"></i>
+                        <a href="mailto:hello@sonjachristina.com" class="text-gray-600 hover:text-deep-teal transition">hello@sonjachristina.com</a>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-location-dot text-deep-teal mr-3 mt-1"></i>
+                        <span class="text-gray-600">Based in Germany | Serving clients worldwide (German & English)</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-video text-deep-teal mr-3 mt-1"></i>
+                        <span class="text-gray-600">Online sessions via Zoom</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Bottom Strip -->
+        <div class="border-t border-gray-400/30 pt-8">
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                <p class="text-sm text-gray-600">
+                    © 2025 Sonja Christina | All Rights Reserved
+                </p>
+                <p class="text-sm text-gray-600">
+                    Website Design by [Designer Name] | <i class="fas fa-camera text-xs"></i> Photography by [Photographer Name]
+                </p>
+            </div>
+            <p class="text-xs italic text-gray-500 text-center mt-6">
+                "There is always a way, and you don't have to walk it alone."
+            </p>
+        </div>
+    </div>
+</footer>
+{% endblock %}
+
